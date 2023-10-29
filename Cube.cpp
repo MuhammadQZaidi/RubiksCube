@@ -81,6 +81,23 @@ int main()
         while (white[2][1] =='W'){F();F();D();}
       }
       U();
+      /*
+      std::cout<<std::endl;
+      printcube();
+      std::cout<<std::endl;*/
+    }
+  }
+  if (w<4)
+  {
+    for (int i = 0; i < 4; i++)
+    {
+      if (green[0][1]=='W')
+      {
+        w++;
+        L();L();Fp();L();F();
+        while (green[0][1] =='W'){L();L();Fp();L();F();}
+      }
+      U();
       std::cout<<std::endl;
       printcube();
       std::cout<<std::endl;
