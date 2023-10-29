@@ -48,16 +48,51 @@ void RotateSecondRow(char (*)[3], char (*)[3], char (*)[3], char(*)[3], char (*)
 void scramblecube();
 int main() 
 {
-  std::cout << "Starting Cube: " << std::endl;
-  std::cout << std::endl;
+   std::cout << "Starting Cube: " << std::endl << std::endl;
   printcube();
 
-  std::cout << std::endl;
-  std::cout << "Cube after Running Scrambler" << std::endl;
-  std::cout << std::endl;
+  std::cout << std::endl << "Cube after Running Scrambler" << std::endl << std::endl;
   scramblecube();
   printcube();
   
+  //Phase 1.1 White Cross:
+
+  //checking Yellow for white cross peices
+  int w = 0;
+  for (int i = 0; i < 4; i++)
+  {
+    //std::cout << yellow[0][1];
+    if (yellow[0][1]=='W'){w++;}
+    D();
+  }
+  //std::cout<<" "<< w << std::endl;
+  std::cout << std::endl;
+
+  //checking White side for white pieces of cross
+  if (w<4)
+  {
+    for (int i = 0; i < 4; i++)
+    {
+      if (white[2][1]=='W')
+      {
+        std::cout<<std::endl<<"Found white"<<std::endl;
+        w++;
+        F();F();D();
+        while (white[2][1] =='W'){F();F();D();}
+      }
+      U();
+      std::cout<<std::endl;
+      printcube();
+      std::cout<<std::endl;
+    }
+  }
+
+
+  printcube();
+
+
+
+
   return 0;
 }
 
