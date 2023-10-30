@@ -98,9 +98,27 @@ int main()
         while (green[0][1] =='W'){L();L();Fp();L();F();}
       }
       U();
+      /*
       std::cout<<std::endl;
       printcube();
-      std::cout<<std::endl;
+      std::cout<<std::endl;*/
+    }
+  } 
+  //2nd row shenanigans
+  if (w<4)
+  {
+    //green side
+    if (green [1][0]=='W')
+    {
+      w++;
+      L();D();Lp();
+      if (green [1][0]=='W'){L();}
+    }
+    if (green [1][2]=='W' && w<4)
+    {
+      w++;
+      Rp();D();R();
+      if (green [1][0]=='W'){Rp();}
     }
   }
 
