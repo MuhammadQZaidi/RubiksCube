@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <iomanip>
 #include <cstdlib>
 #include <ctime>
@@ -85,7 +85,7 @@ int main()
       std::cout<<std::endl;
       printcube();
       std::cout<<std::endl;*/
-    }
+    /*}
   }
   if (w<4)
   {
@@ -102,7 +102,7 @@ int main()
       std::cout<<std::endl;
       printcube();
       std::cout<<std::endl;*/
-    }
+    /*}
   } 
   //2nd row shenanigans
   if (w<4)
@@ -438,4 +438,4 @@ void scramblecube()
       }
     }
 
-}
+}*/
