@@ -1,4 +1,5 @@
-#include <iostream>
+/*#include <iostream>
+>>>>>>> 28dfc5cc5e3e9e433798b11768c6298364bddc2b
 #include <iomanip>
 #include <cstdlib>
 #include <ctime>
@@ -85,7 +86,9 @@ int main()
       std::cout<<std::endl;
       printcube();
       std::cout<<std::endl;*/
-    }
+
+    /*}
+>>>>>>> 28dfc5cc5e3e9e433798b11768c6298364bddc2b
   }
   if (w<4)
   {
@@ -102,7 +105,9 @@ int main()
       std::cout<<std::endl;
       printcube();
       std::cout<<std::endl;*/
-    }
+
+    /*}
+>>>>>>> 28dfc5cc5e3e9e433798b11768c6298364bddc2b
   } 
   //2nd row shenanigans
   if (w<4)
@@ -437,5 +442,4 @@ void scramblecube()
         Dp();
       }
     }
-
-}
+*/
