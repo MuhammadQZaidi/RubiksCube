@@ -146,6 +146,22 @@ int main()
         std::cout<<w;
         std::cout<<"row 1 scanned"<<std::endl;
 
+        w=0;
+        while (w<4)
+        {
+            if (cube.front[2][1]==cube.front[1][1] && cube.bottom[2][1]=='W')
+            {
+                cube.F();cube.F();
+                cube.turn_cube_left();
+                w++;
+            }
+            else
+            {
+                cube.D();
+            }
+            //cube.display_cube();
+        }
+
         
     
     cube.display_cube();
