@@ -111,6 +111,26 @@ int main()
                     cube.L();cube.L();cube.F();cube.L();cube.Fp();
                     if (cube.front[2][1]=='W'){cube.F();cube.F();}
                     while (cube.front[0][1] =='W'){cube.D();cube.L();cube.L();cube.Fp();cube.L();cube.F();}
+                    if (cube.left[1][0]=='W')
+                    {
+                        while (cube.bottom[2][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.turn_cube_left();
+                        cube.L();
+                        cube.turn_cube_right();
+                        w++;
+                    }
+                    if (cube.left[1][2]=='W')
+                    {
+                        while (cube.bottom[0][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.Fp();
+                        w++;
+                    }
                 }
                 cube.D();
                 /*
@@ -133,7 +153,48 @@ int main()
                     w++;
                     cube.L();cube.L();cube.Fp();cube.L();cube.F();
                     while (cube.front[0][1] =='W'){cube.D();cube.L();cube.L();cube.Fp();cube.L();cube.F();}
+                    if (cube.left[1][0]=='W')
+                    {
+                        while (cube.bottom[2][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.turn_cube_left();
+                        cube.L();
+                        cube.turn_cube_right();
+                        w++;
+                    }
+                    if (cube.left[1][2]=='W')
+                    {
+                        while (cube.bottom[0][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.Fp();
+                        w++;
+                    }
+                    if (cube.right[1][0]=='W')
+                    {
+                        while (cube.bottom[0][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.F();
+                        w++;
+                    }
+                    if (cube.right[1][2]=='W')
+                    {
+                        while (cube.bottom[2][1]=='W')
+                        {
+                            cube.D();
+                        }
+                        cube.turn_cube_right();
+                        cube.Rp();
+                        cube.turn_cube_left();
+                        w++;
+                    }
                 }
+                
                 cube.U();
                 /*
                 std::cout<<std::endl;
